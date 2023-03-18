@@ -1,0 +1,19 @@
+{
+  "name": "folarooney",
+  "version": "1.0.0",
+  "description": "A restaurant chat bot",
+  "main": "index.js",
+  "license": "ULICENCED",
+  "scripts": {
+    "prep": "concurrently \"cd backend && yarn\" \"cd frontend &&  yarn\"",
+    "food": "cd backend && node factory/food.factory.js",
+    "dev": "concurrently \"cd backend && nodemon index.js\" \"cd frontend &&  yarn dev\"",
+    "build": "cd frontend && yarn build && cd .. && cp -R frontend/dist backend/templates",
+    "start": "cd backend && node index.js"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "concurrently": "^7.6.0",
+    "nodemon": "^2.0.21"
+  }
+}
