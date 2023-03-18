@@ -4,7 +4,7 @@ A restaurant chat bot
 
 ## Requirements
 
-- Node js
+- Node js >=v16.16 
 - Yarn
 - MongoDB
 - Paystack business (go to [Paystack](https://dashboard.paystack.com) to create one).
